@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="50"
+    height="50"
+    viewBox="0 0 50 50"
+    >
+    <defs>
+        <mask id="mask">
+        <g fill="white">
+            <image
+            filter="url(#monochrome)"
+            xlink:href="./img/icons/sound.png"
+            width="100%"
+            height="100%"
+            />
+        </g>
+        </mask>
+        <linearGradient id="Lg" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="20%" stop-color="#4ceb02" />
+        <stop offset="70%" stop-color="#8c00a8" />
+        </linearGradient>
+        <filter id="monochrome" color-interpolation-filters="sRGB">
+        <feColorMatrix
+            type="matrix"
+            values="0 0 0 15 0
+                    0 0 0 15 0
+                    0 0 0 15 0
+                    15 0 0 0 0"
+        />
+        </filter>
+    </defs>
+    <rect
+        width="100%"
+        height="100%"
+        fill="url(#Lg)"
+        mask="url(#mask)"
+    />
+</svg>
